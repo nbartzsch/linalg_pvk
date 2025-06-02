@@ -279,5 +279,14 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 
+## matlab, simulink files
+#*.m
+#*.slx
+*.slxc
+
+# Exclude the pdf folder from being ignored
+!/pdf/
+!/pdf/*.pdf
+
 # Exclude the .vscode folder
 .vscode/
