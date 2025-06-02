@@ -1,7 +1,15 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{script}
+\usepackage{gauss}
 
 \setboolean{includingsolutions}{true} % true: includes solutions, % false, no solutions
+
+% Custom matrices for the guass.sty package. Has to be the same as in main.tex
+% Use with \begin{gmatrix}[<x>] ... \end{gmatrix}
+\newmatrix{.}{.}{L}
+\newmatrix{|}{.}{R}
+\newmatrix{(}{|}{E}
+\newmatrix{.}{)}{D}
 
 \title{Lineare Algebra I \& II\\ \Large PVK Skript mit Lösungen}
 
