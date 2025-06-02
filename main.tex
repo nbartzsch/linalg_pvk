@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage[]{geometry} 
+\usepackage[german]{babel}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{tocloft}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\title{Lineare Algebra I \& II\\ \Large PVK Skript}
+\author{Nicolas Bartzsch\\ \textit{nbartzsch@ethz.ch}}
+\date{Sommer 2024}
+
+\begin{document}
+    % Title page
+    \pagenumbering{gobble}
+    \maketitle
+    \newpage
+    
+    %Vorwort
+    \pagenumbering{roman}
+    \include{chapters/Vorwort}
+    \newpage
+    
+    %Table of Contents
+    \setcounter{tocdepth}{2}
+    \tableofcontents
+    \newpage
+    
+    %Inhalt
+    \pagenumbering{arabic}
+     
+    \include{chapters/LGS}
+    \include{chapters/Matrizen}
+    \include{chapters/Determinante}
+    \include{chapters/Vektorraeume}
+    \include{chapters/Lineare_abb}
+    \include{chapters/Eigenwertproblem}
+    \include{chapters/Kleinste_quadrate}
+    \include{chapters/LDGS}
+\end{document}
