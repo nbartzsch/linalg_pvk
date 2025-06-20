@@ -44,14 +44,14 @@ if [ $? -eq 0 ]; then
     # Get the PDF filename (replace .tex with .pdf)
     pdfname="${filename%.tex}.pdf"
     
-    # # Clean up auxiliary files
-    # read -p "Would you like to clean up auxiliary files? (y/n): " clean_choice
-    # if [[ $clean_choice =~ ^[Yy]$ ]]; then
-    #     rm -f *.aux *.log *.out *.toc *.nav *.snm *.fls *.fdb_latexmk
-    #     echo "Auxiliary files cleaned up."
-    # fi
+    # Clean up auxiliary files
+    read -p "Would you like to clean up auxiliary files? (y/n): " clean_choice
+    if [[ $clean_choice =~ ^[Yy]$ ]]; then
+        rm -f *.aux *.log *.out *.toc *.nav *.snm *.fls *.fdb_latexmk
+        echo "Auxiliary files cleaned up."
+    fi
 
-    # open "$pdfname"        
+    open "$pdfname"        
 else
     echo "Compilation failed. Check the output above for errors."
     exit 1
