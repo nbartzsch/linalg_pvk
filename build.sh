@@ -37,6 +37,9 @@ echo "========================"
 
 # Compile with pdflatex (run twice for proper references)
 pdflatex "$filename"
+
+pdflatex "$filename"
+
 if [ $? -eq 0 ]; then
     echo
     echo "Compilation successful!"

@@ -145,7 +145,7 @@ Sei
 
     \leftskip=2em
 
-    \textbf{a)} Aus 6.6.1 kennen wir bereits das charakteristiche Polynom \[ p_A(\lambda) = (-3 - \lambda) \left[ (5 - \lambda)(-7 - \lambda) + 32 \right] = - (\lambda + 3)^2(\lambda - 1). \] Wir sahen auch, dass für jeden Eigenwert geom. Vfh. = alg. Vfh. gilt. Die Matrix ist also halbeinfach und deswegen Diagonalisierbar.
+    \textbf{a)} Aus 6.6.1 kennen wir bereits das charakteristische Polynom \[ p_A(\lambda) = (-3 - \lambda) \left[ (5 - \lambda)(-7 - \lambda) + 32 \right] = - (\lambda + 3)^2(\lambda - 1). \] Wir sahen auch, dass für jeden Eigenwert geom. Vfh. = alg. Vfh. gilt. Die Matrix ist also halbeinfach und deswegen Diagonalisierbar.
 
     \vspace{1\baselineskip}
 
@@ -289,7 +289,7 @@ Sei die quadratische Form \( q \) gegeben durch \[ \begin{aligned} q: \; \mathbb
 
 \begin{enumerate}[label=\alph*)]
     \item Bestimmen Sie eine symmetrische Matrix \( A \), sodass \( q(x)=x^\top Ax \).
-    \item Führen Sie die Hauptsachentransformation \( y=Tx \) durch und geben Sie die Normalform von \( q \) an.
+    \item Führen Sie die Hauptachsentransformation \( y=Tx \) durch und geben Sie die Normalform von \( q \) an.
 \end{enumerate}
 
 \vspace{1\baselineskip}
@@ -339,15 +339,15 @@ Sei die quadratische Form \( q \) gegeben durch \[ \begin{aligned} q: \; \mathbb
 
     \begin{equation*}
         T = \begin{pmatrix}
-            \frac{\sqrt{3}}{2} & \frac{\sqrt{3}}{4} \\
-            \frac{1}{2} & -\frac{3}{4} 
+            \frac{\sqrt{3}}{2} & \frac{1}{2} \\
+            \frac{1}{2} & -\frac{\sqrt{3}}{2} 
             \end{pmatrix}, \quad D = \begin{pmatrix}
                 1 & 0 \\
                 0 & -1
             \end{pmatrix}
     \end{equation*}
 
-    Nun können wir die Hauptsachentransformation \( y = Tx \) durchführen.
+    Nun können wir die Hauptachsentransformation \( y = Tx \) durchführen.
 
     \begin{equation*}
         x^\top Ax \xrightarrow{x=T^{-1}y} (T^{-1}y)^\top A T^{-1}y = y^\top \underbrace{T A T^{-1}}_{D} y
